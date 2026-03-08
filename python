@@ -1,2 +1,15 @@
-list = ["avikesh","vicky","six","google","computer","kumar"]
-print(len(list))
+my_name="vicky"
+#posetive indexing
+
+print(my_name[0:5])
+print(my_name[1])
+print(my_name[2])
+print(my_name[3])
+print(my_name[4])
+print(my_name[5])
+#negative indexing
+print(my_name[-1])
+print(my_name[-2])
+print(my_name[-2:-4])
+print(my_name[-5])
+print(my_name[-6])
