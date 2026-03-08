@@ -1,1 +1,2 @@
+list = ["avikesh","vicky","six","google","computer","kumar"]
 print(len(list))
