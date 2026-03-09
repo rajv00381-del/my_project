@@ -1,4 +1,1 @@
-import keyword
-a =keyword.kwlist
-for i in a:
-print(i)
+print(my new word pad);
