@@ -1,1 +1,2 @@
-print(my new word pad);
+my_name="vicky"
+print(my_name[3])
