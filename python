@@ -5,6 +5,6 @@
 my_word = "Programming"
 print(my_word[0])  # m
 
-print(my_word[10])  # g
+print(my_word[6])  # g
 
 print(my_word[-1])  # g
