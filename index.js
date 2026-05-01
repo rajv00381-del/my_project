@@ -24,18 +24,18 @@ let num2 = prompt("enter Second Number:");
 }
 }
 
-let random_data = ["lampu","sa", "sachin","nalla","hai", "jo","chhaka","jaise","karta","rahta","hai"]
+let random_data = ["suchain ","randba", "hai","jo","mara", "lata hai","number","mobile","ma","l","hai"]
     let content =0;
 function inputBox(){
 let input = document.createElement("input");
 input.style.background = "darkblue";
 input.style.color = "white";
 input.style.padding = "20px";
-input.placeholder = random_data[content];
-if(content == 10){
+if(content == 11){
     content = 0
 }
-content +=1
+input.placeholder = random_data[content];
  document.body.appendChild(input);
+ content +=1
 
 }
