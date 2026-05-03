@@ -1,14 +1,67 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
+<html>
+  <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+    <title>Simple Calculator</title>
+    <style>
+      body {
+        font-family: Arial, sans-serif;
+        margin: 20px;
+      }
+      input, select, button {
+        margin: 5px;
+        padding: 10px;
+        font-size: 16px;
+        background-color: rgb(165, 161, 161);
+        color: blanchedalmond;
+        box-shadow:0px 10px 12px 1px black;
+      }
+      #result {
+        margin-top: 20px;
+        font-size: 18px;
+        font-weight: bold;
+      }
+    </style>
+    </head>
 <body>
-    <h3 >i love my india </h3>
-    <h4>my name vicky</h4>
 
-    <h6>Developed By Vicky kumar mandal<sub>rajv00381@gmail.com</sub></h6>
+  <input type="number" id="num1" placeholder="Enter first number">
+  <input type="number" id="num2" placeholder="Enter second number">
+
+  <select id="act">
+    <option value="">Select</option>
+    <option value="+">Addition</option>
+    <option value="-">Subtract</option>
+    <option value="*">Multiply</option>
+    <option value="/">Divide</option>
+  </select>
+
+  <button onclick="calculate()">Result</button>
+
+  <p id="result"></p>
+
+  <script>
+    function calculate(){
+      let a = Number(document.getElementById("num1").value);
+      let b = Number(document.getElementById("num2").value);
+      let act = document.getElementById("act").value;
+      let result;
+
+      if(act == "+"){
+        result = a + b;
+      } else if(act == "-"){
+        result = a - b;
+      } else if(act == "*"){
+        result = a * b;
+      } else if(act == "/"){
+        result = b !== 0 ? a / b : "Cannot divide by 0";
+      } else {
+        result = "Please select operation";
+      }
+
+      document.getElementById("result").innerHTML = result;
+    }
+  </script>
+
 </body>
 </html>
